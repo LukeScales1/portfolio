@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/memory.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="row score-panel">
+        	<div class="moves-box">
+                <ul class="stars">
+        		  <li><i class="fa fa-star"></i></li>
+        		  <li><i class="fa fa-star"></i></li>
+        		  <li><i class="fa fa-star"></i></li>
+        	   </ul>
+
+        	   <span><span class="moves">0</span> Moves</span>
+            </div>
+
+            <div class="timer-box">
+                <span><span class="timer">0</span> Secs</span>
+            </div>
+
+            <div class="restart">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <div id="modal-background">
+
+        </div>
+
+        <div id="modal">
+            <div class="modal-display">
+                <h2 id="result">You won in <span id="final-moves">0</span> moves at <span id="final-time">0</span> seconds with a score of <span id="final-score">0</span> stars</h2>
+
+                <h3>Would you like to play again?</h3>
+
+                <button id="yes-btn" class="modal-btn">Sure thing!</button>
+
+                <button id="no-btn" class="modal-btn">Nah, thanks!</button>
+
+            </div>
+        </div>
+
+        <ul class="deck">
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../assets/js/memory.js"></script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff url('../../images/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.score-panel .col-md-3 {
+    min-width: 165px;
+}
+
+.score-panel .moves-box{
+    width: 33.33%;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+    width: 33.33%;
+}
+
+.score-panel .timer-box {
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/*
+ * Styles for the modal
+ */
+
+#modal {
+    display: none;
+    width: 80%;
+    height: 40%;
+    border: solid, solid, inset, solid;
+    border-radius: 5px;
+    z-index: 2;
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+}
+
+#modal-background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+.modal-display {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 100%;
+    border-radius: 4px;
+    padding: 40px;
+    padding-top: 60px;
+
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.modal-btn {
+    font-size: 18pt;
+    line-height: 1.8rem;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    width: 180px;
+}
+
+#yes-btn {
+    border-color: green;
+
+}
+
+#no-btn {
+    border-color: red;
+}
+
+/*
+ * Breakpoints
+ */
+
+
+@media screen and (max-width: 770px) {
+    .deck {
+        min-width: 80%;
+        height: 580px;
+    }
+
+    .deck .card {
+        height: 115px;
+        width: 115px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .deck {
+        min-width: 80%;
+        min-width: 550px;
+        height: 580px;
+    }
+
+    .deck .card {
+        height: 115px;
+        width: 115px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .deck {
+        width: 80%;
+        height: 500px;
+    }
+
+    .deck .card {
+        height: 105px;
+        width: 105px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .deck {
+        width: 80%;
+        height: 490px;
+    }
+
+    .deck .card {
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .deck {
+        min-width: 480px;
+        height: 480px;
+    }
+
+    .deck .card {
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+    }
+
+    .modal-display {
+        padding-top: 0px;
+        padding: 20px;
+    }   
+
+    #result {
+        margin-top: 10px;
+    }
+
+    .modal-btn {
+        font-size: 16pt;
+        line-height: 1.6rem;
+        margin: 5px;
+        padding: 5px;
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .deck {
+        min-width: 450px;
+        height: 450px;
+    }
+
+    .deck .card {
+        height: 90px;
+        width: 90px;
+        border-radius: 7.5px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .deck {
+        min-width: 430px;
+        height: 430px;
+    }
+
+    .deck .card {
+        height: 85px;
+        width: 85px;
+        border-radius: 7.5px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    h1 {
+        font-weight: 250;
+        font-size: 22pt;
+        padding-bottom: 10px; 
+    }
+
+    body {
+        font-size: 11pt;
+    }
+
+    .deck {
+        min-width: 415px;
+        height: 415px;
+    }
+
+    .deck .card {
+        height: 80px;
+        width: 80px;
+        border-radius: 7px;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+
+    h1, h2 {
+        font-weight: 200;
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-weight: 200;
+        font-size: 16pt;
+    }
+
+    body {
+        font-weight: 100;
+        font-size: 10pt;
+    }
+
+    .deck {
+        min-width: 300px;
+        height: 300px;
+        border-radius: 8px;
+        margin: 0 0 3em;
+        padding: 24px;
+    }
+
+    .deck .card {
+        height: 56px;
+        width: 56px;
+        border-radius: 4px;
+    }
+
+    .deck .card.show {
+        font-size: 20px;
+    }
+
+    .deck .card.match {
+        font-size: 20px;
+    }
+
+    #modal {
+        width: 80%;
+        height: 50%;
+    }
+
+    .modal-display {
+        padding-top: 0px;
+        padding: 20px;
+    }   
+
+    #result {
+        margin-top: 20px;
+    }
+
+    .modal-btn {
+        font-size: 12pt;
+        line-height: 1.4rem;
+        margin: 1px;
+        padding: 5px;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .score-panel {
+        width: 660px;
+        /*justify-content: space-between;*/
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .score-panel {
+        width: 90%;
+    }
+
+    .deck {
+        width: 90%;
+    }    
+}
