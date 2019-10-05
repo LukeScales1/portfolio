@@ -2861,6 +2861,10 @@ input, select, textarea {
 			width: 3rem;
 		}
 
+		a.arrow.up {
+			transform: rotate(180deg);
+		}
+
 /* Gallery */
 
 	@-moz-keyframes gallery-modal-spinner {
@@ -2937,7 +2941,7 @@ input, select, textarea {
 		.gallery a {
 			border-bottom: 0;
 			display: block;
-			margin: 1.25rem 0 0 1.25rem;
+			margin: 1.25rem 0 1.25rem 1.25rem;
 			outline: 0;
 			position: relative;
 			width: calc(50% - 1.25rem);
@@ -3115,7 +3119,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.gallery {
-				margin: -0.625rem 0 0 -0.625rem;
+				margin: -0.625rem 0 0.625rem -0.625rem;
 				width: calc(100% + 0.625rem);
 			}
 
