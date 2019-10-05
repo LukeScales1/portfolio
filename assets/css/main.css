@@ -362,17 +362,15 @@ input, select, textarea {
 	}
 
 	.rotate90 {
-	    -webkit-transform: rotate(90deg);
 	    -moz-transform: rotate(90deg);
-	    -o-transform: rotate(90deg);
+	    -webkit-transform: rotate(180deg);
 	    -ms-transform: rotate(90deg);
 	    transform: rotate(90deg);
 	}
 
 	.rotate180 {
-	    -webkit-transform: rotate(180deg);
 	    -moz-transform: rotate(180deg);
-	    -o-transform: rotate(180deg);
+	    -webkit-transform: rotate(180deg);
 	    -ms-transform: rotate(180deg);
 	    transform: rotate(180deg);
 	}
@@ -2880,10 +2878,6 @@ input, select, textarea {
 			height: 100%;
 			position: relative;
 			width: 3rem;
-		}
-
-		a.arrow.up {
-			transform: rotate(180deg);
 		}
 
 /* Gallery */
