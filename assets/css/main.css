@@ -2983,12 +2983,13 @@ input, select, textarea {
 			outline: 0;
 			position: relative;
 			width: calc(50% - 1.25rem);
+			box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 		}
 
 			.gallery a img {
 				display: block;
 				height: 25vw;
-				min-height: 18rem;
+				min-height: 27rem;
 				object-fit: cover;
 				object-position: center;
 				width: 100%;
@@ -3004,6 +3005,11 @@ input, select, textarea {
 
 			.gallery a.portrait img {
 				height: 30vw;
+			}
+
+			.gallery a #full {
+				width: 100%;
+				height: 100%;
 			}
 
 		.gallery .modal {
