@@ -359,6 +359,18 @@ input, select, textarea {
 /* Generic */
 	.hidden {
 		visibility: hidden;
+		display: none;
+	}
+
+	.transition {
+		-webkit-animation-iteration-count: 1;
+    	animation-iteration-count: 1;
+    	-webkit-animation-duration: .3s;
+    	animation-duration: .3s;
+    	-webkit-animation-timing-function: ease;
+    	animation-timing-function: ease;
+    	-webkit-animation-fill-mode: both;
+    	animation-fill-mode: both
 	}
 
 	.rotate90 {
@@ -2542,7 +2554,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.last {
+{
 			display: block;
 			margin: 5rem 0 1rem 0;
 			width: 105%;
