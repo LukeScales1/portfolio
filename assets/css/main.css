@@ -356,6 +356,11 @@ input, select, textarea {
 
 		}
 
+/* Generic */
+	.hidden {
+		visibility: hidden;
+	}
+
 /* Row */
 
 	.row {
