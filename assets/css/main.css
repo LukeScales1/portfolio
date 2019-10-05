@@ -2554,7 +2554,8 @@ input, select, textarea {
 				width: 100%;
 			}
 
-{
+
+		.image.last {
 			display: block;
 			margin: 5rem 0 1rem 0;
 			width: 105%;
