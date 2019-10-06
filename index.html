@@ -139,7 +139,7 @@
 										   <p>Lorem ipsum with a <a href="http://example.com">link thrown in</a> etc.</p>
 										   <p>etc.</p>
 										</div>
-										<div class="transition hidden">
+										<div id="hidden accordion" class="transition">
 											<p><strong>Mechatronic Engineering</strong> is an interesting field which combines mechanical engineering, electrical engineering, and software engineering into one disctinct discipline.</p>
 											<div class="gallery">
 											
@@ -179,6 +179,42 @@
 							<h2>Work Experience</h2>
 						</header>
 						<div class="content">
+
+							<!-- Accordion -->
+
+							<div id="accordion" class="accordion">
+							  <div class="item">
+							    <div class="link"><i class="fa fa-database"></i>Web Design<i class="fa fa-chevron-down"></i></div>
+							    <p>Test thing</p>
+							  </div>>
+							  <div class="item">
+							    <div class="link"><i class="fa fa-code"></i>Coding<i class="fa fa-chevron-down"></i></div>
+							    <ul class="submenu">
+							      <li><a href="#">Javascript</a></li>
+							      <li><a href="#">jQuery</a></li>
+							      <li><a href="#">Ruby</a></li>
+							    </ul>
+							  </div>
+							  <div class="item">
+							    <div class="link"><i class="fa fa-mobile"></i>Devices<i class="fa fa-chevron-down"></i></div>
+							    <ul class="submenu">
+							      <li><a href="#">Tablet</a></li>
+							      <li><a href="#">Mobile</a></li>
+							      <li><a href="#">Desktop</a></li>
+							    </ul>
+							  </div>
+							  <li>
+							    <div class="link"><i class="fa fa-globe"></i>Global<i class="fa fa-chevron-down"></i></div>
+							    <ul class="submenu">
+							      <li><a href="#">Google</a></li>
+							      <li><a href="#">Bing</a></li>
+							      <li><a href="#">Yahoo</a></li>
+							    </ul>
+							  </li>
+							</div>
+
+
+
 							<p><strong>The following section</strong> outlines the work experience I have gained that is most relevant to my profession.</p>
 
 							<!-- Section -->
@@ -198,7 +234,7 @@
 										</ul>
 										<h5 id="mark-recommendation">Mark Cummins - CEO at Pointy</h5>
 										<blockquote>Luke joined Pointy at one of the highest growth phases of our journey. He was thrown in at the deep end in a company and a job that was changing quickly. Not an easy place to start! Luke proved very capable and adaptable. At the start, our systems were relatively immature, and the tools and processes were far from ideal. Working through this was challenging and frustrating at times, but Luke persevered and helped us develop to the point that we have mature systems in a productive and stable state. He has lots of initiative, always looking to take on projects and spotting improvements or solving issues that had been missed by others. I look forward to seeing what Luke builds over the course of his career!</blockquote>
-										<a href="#intro" class="hidden arrow up scrolly"><span class="label">Return</span></a>
+										<a href="#intro" class="hidden arrow rotate180 scrolly"><span class="label">Return</span></a>
 										<div class="gallery">
 											<a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
 											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
@@ -216,6 +252,12 @@
 										<p>Software Engineer (Contractor)</p>
 									</header>
 									<div class="content">
+										<p><strong>Duties Included:</strong></p>
+										<ul>
+											<li>Data analysis and report writing.</li>
+											<li>Developing automated tasks to generate reports.</li>
+											<li>Presenting to and training staff in the use of software.</li>
+										</ul>
 										<div class="gallery">
 											<a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
 											<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
@@ -232,6 +274,12 @@
 										<p>Software Engineer (Undergraduate)</p>
 									</header>
 									<div class="content">
+										<p><strong>Duties Included (further to the above):</strong></p>
+										<ul>
+											<li>Researching/sourcing software packages.</li>
+											<li>Writing manuals.</li>
+											<li>Presenting and training staff in the use of software.</li>
+										</ul>
 										<div class="gallery">
 											<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
 											<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
@@ -272,43 +320,71 @@
 							</ul>
 
 							<!-- Section -->
-								<section>
-									<header>
-										<h3>Caloreasy - Android Application</h3>
-										<p><i>Final Year Project - BEng in Mechatronic Engineering</i></p>
-										<p>Using Machine Learning-based image classification and a Bluetooth Low Energy kitchen scale to enhance the User Experience of diet management applications.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/fyp-meal.png" class="portrait"><img src="images/fyp-meal.png" alt="" /></a>
-											<a href="images/fyp-meal-overwrite.png" class="portrait"><img src="images/fyp-meal-overwrite.png" alt="" /></a>
-											<a href="images/fyp-meal-delete.png" class="landscape"><img src="images/fyp-meal-delete.png" alt="" /></a>
-										</div>
-										<ul class="actions">
-											<li><a href="projects/fyp/fyp-report.pdf" class="button primary large">Project Report</a></li>
-											<li><a href="https://github.com/LukeScales1/FYP" target="_blank" rel="noopener noreferrer" class="button large">Source Code</a></li>
-										</ul>
+							<section>
+								<header>
+									<h3>Caloreasy - Android Application</h3>
+									<p><i>Final Year Project - BEng in Mechatronic Engineering</i></p>
+									<p>Using Machine Learning-based image classification and a Bluetooth Low Energy kitchen scale to enhance the User Experience of diet management applications.</p>
+								</header>
+								<div class="content">
+									<p><strong>At its core</strong> this application is a typical calorie-counting application: the user can add meals which contain ingredients, where the user specifies the weight/quantity consumed of each ingredient in the meal. It then uses a nutritional value database (in the case of this app, the USDA Food Composition Database).</p>
+									<div class="gallery">
+										<a href="images/fyp-meal.png" class="portrait"><img src="images/fyp-meal.png" alt="" /></a>
+										<a href="images/fyp-meal-overwrite.png" class="portrait"><img src="images/fyp-meal-overwrite.png" alt="" /></a>
+										<a href="images/fyp-meal-delete.png" class="landscape"><img src="images/fyp-meal-delete.png" alt="" /></a>
 									</div>
-								</section>
-								<!-- Section -->
-								<section>
-									<header>
-										<h3>Card Matching Game</h3>
-										<p><i>Frontend Web Development Project</i></p>
-										<p>A rendition of the typical memory game where the user has to match all the card pairs to win.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/memory-game.png" class="landscape" id="full"><img src="images/memory-game.png" alt="" /></a>
-										</div>
-										<ul class="actions">
-											<li><a href="projects/memory.html" class="button primary large">Launch Game</a></li>
-											<li><a href="https://github.com/LukeScales1/memory-game" target="_blank" rel="noopener noreferrer" class="button large">Source Code</a></li>
-										</ul>
-										<a href="#intro" class="arrow rotate180 scrolly"><span class="label">Return</span></a>
-										<h3>Return to top</h3>
+									<ul class="actions">
+										<li><a href="projects/fyp/fyp-report.pdf" class="button primary icon solid fa-download">Project Report</a></li>
+										<li><a href="https://github.com/LukeScales1/FYP" target="_blank" rel="noopener noreferrer" class="button">Source Code</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+								</div>
+							</section>
+							<!-- Section -->
+							<section>
+								<header>
+									<h3>Card Matching Game</h3>
+									<p><i>Frontend Web Development Project</i></p>
+									<p>A rendition of the typical memory game where the user has to match all the card pairs to win.</p>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a href="images/memory-game.png" class="landscape" id="full"><img src="images/memory-game.png" alt="" /></a>
 									</div>
-								</section>
+									<ul class="actions">
+										<li><a href="projects/memory.html" class="button primary large">Launch Game</a></li>
+										<li><a href="https://github.com/LukeScales1/memory-game" target="_blank" rel="noopener noreferrer" class="button large">Source Code</a></li>
+									</ul>
+								</div>
+							</section>
+							<section>
+								<header>
+									<h3>Frogger - Arcade Game Clone</h3>
+									<p><i>Frontend Web Development Project</i></p>
+									<p>A clone of the classic Frogger game, this project shows off some standard JavaScript functionality.</p>
+								</header>
+								<div class="content">
+									<p><strong>At its core</strong> this application is a typical calorie-counting application: the user can add meals which contain ingredients, where the user specifies the weight/quantity consumed of each ingredient in the meal. It then uses a nutritional value database (in the case of this app, the USDA Food Composition Database)</p>
+									<div class="gallery">
+										<a href="images/fyp-meal.png" class="portrait"><img src="images/fyp-meal.png" alt="" /></a>
+										<a href="images/fyp-meal-overwrite.png" class="portrait"><img src="images/fyp-meal-overwrite.png" alt="" /></a>
+										<a href="images/fyp-meal-delete.png" class="landscape"><img src="images/fyp-meal-delete.png" alt="" /></a>
+									</div>
+									<ul class="actions">
+										<li><a href="projects/frogger.html" class="button primary large">Launch Game</a></li>
+										<li><a href="https://github.com/LukeScales1/arcade-game-clone-frogger" target="_blank" rel="noopener noreferrer" class="button large">Source Code</a></li>
+									</ul>
+								</div>
+							</section>
+							<section>
+								<div class="content">
+									<a href="#intro" class="arrow rotate180 scrolly"><span class="label">Return</span></a>
+									<h3 href="#intro" cursor="pointer">Return to top</h3>
+								</div>
+							</section>
 						</div>
 					</section>
 
