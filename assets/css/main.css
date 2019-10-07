@@ -2641,13 +2641,63 @@ input, select, textarea {
 
 		.image.last {
 			display: block;
-			margin: 5rem 0 1rem 0;
+			margin: 5rem 0 5rem 0;
 			width: 105%;
 		}
 
 			.image.last img {
 				width: 105%;
 			}
+
+
+		@media screen and (min-width: 1200px) {
+
+
+		.image.last {
+			display: block;
+			margin: 3rem 0 5rem 0;
+			width: 100%;
+		}
+
+			.image.last img {
+				width: 90%;
+			}
+
+		}
+
+		@media screen and (min-width: 1370px) {
+
+
+		.image.last {
+			display: block;
+			margin: 0 0 5rem 0;
+			width: 100%;
+		}
+
+			.image.last img {
+				width: 80%;
+			}
+
+		}
+
+		@media screen and (min-width: 1600px) {
+
+
+		.image.last {
+			display: block;
+			margin: 0 0 10rem 0;
+			width: 100%;
+		}
+
+			.image.last img {
+				width: 80%;
+			}
+
+		}
+
+		p.last {
+			margin-bottom: 0rem;
+		}
 
 /* List */
 
@@ -2986,6 +3036,10 @@ input, select, textarea {
 			position: relative;
 			width: 3rem;
 		}
+
+	a.arrow.rotate180 {
+		margin-top: 2.5rem;
+	}
 
 /* Gallery */
 
