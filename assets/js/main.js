@@ -82,6 +82,68 @@
 
 		}
 
+
+	// Recommendation link return.
+
+		$("#return-btn").hide();
+
+		$("#here-link").click(function(){
+			// $("#return-btn").toggleClass("hidden");
+			$("#return-btn").show();
+		});
+
+		$("#return-btn").click(function(){
+			// $("#return-btn").toggleClass("hidden");
+			setTimeout(function() {
+				$("#return-btn").hide();
+			}, 500);
+		});
+
+		$('a.here-link')
+			.on('click', 'a', function(event) {
+
+				console.log('clicked');
+
+				// var $a = $(this),
+				// 	$gallery = $a.parents('.gallery'),
+				// 	$modal = $gallery.children('.modal'),
+				// 	$modalImg = $modal.find('img'),
+				// 	href = $a.attr('href');
+
+				// // Not an image? Bail.
+				// 	if (!href.match(/\.(jpg|gif|png|mp4)$/))
+				// 		return;
+
+				// // Prevent default.
+				// 	event.preventDefault();
+				// 	event.stopPropagation();
+
+				// // Locked? Bail.
+				// 	if ($modal[0]._locked)
+				// 		return;
+
+				// // Lock.
+				// 	$modal[0]._locked = true;
+
+				// // Set src.
+				// 	$modalImg.attr('src', href);
+
+				// // Set visible.
+				// 	$modal.addClass('visible');
+
+				// // Focus.
+				// 	$modal.focus();
+
+				// // Delay.
+				// 	setTimeout(function() {
+
+				// 		// Unlock.
+				// 			$modal[0]._locked = false;
+
+				// 	}, 600);
+
+			});
+
 	// Gallery.
 		$('.gallery')
 			.on('click', 'a', function(event) {
