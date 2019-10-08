@@ -127,7 +127,9 @@
 		$('#achievements-btn').click(function(){
 			$('#achievements-btn').fadeOut(2500)
 			$('#achievements').fadeIn(2000, function() {
-				$('#achievements-details').fadeIn(1500);
+				$('#achievements-headings').fadeIn(1500, function() {
+					$('.achievements-details').fadeIn(1500);
+				});
 			});
 		})
 
