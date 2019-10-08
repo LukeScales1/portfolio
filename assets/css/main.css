@@ -2676,6 +2676,22 @@ input, select, textarea {
 			}
 		}
 
+		@media screen and (max-width: 444px) {
+
+			h3.last {
+				font-size: 0.8rem;
+			}
+
+		}
+
+		@media screen and (max-width: 380px) {
+
+			h3.last {
+				font-size: 0.65rem;
+			}
+
+		}
+
 
 		/*.image.last {
 			display: block;
@@ -3077,9 +3093,22 @@ input, select, textarea {
 			width: 3rem;
 		}
 
-	a.arrow.rotate180 {
-		margin-top: 2.5rem;
-	}
+		a.arrow.rotate180 {
+			margin-top: 2.5rem;
+		}
+
+	@media screen and (max-width: 1000px) {
+
+			a.arrow.rotate90 {
+				height: 2rem;
+				width: 5rem;
+			}
+
+			#beng-text {
+				width: 5rem;
+			}
+		}
+
 
 /* Gallery */
 
