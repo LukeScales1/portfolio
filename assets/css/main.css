@@ -367,6 +367,14 @@ input, select, textarea {
 
 /* Generic */
 
+	.split {
+		width: 5rem;
+	}
+
+	section.hidden {
+		margin: 0;
+	}
+
 	#beng-details {
 		cursor: pointer;
 		/*-webkit-transition: all 2s ease;*/
@@ -3097,15 +3105,33 @@ input, select, textarea {
 			margin-top: 2.5rem;
 		}
 
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 400px) {
 
-			a.arrow.rotate90 {
-				height: 2rem;
-				width: 5rem;
-			}
-
+		a.arrow.rotate90 {
+			height: 4rem;
+			width: 5rem;
+		}
 			#beng-text {
-				width: 5rem;
+				font-size: 0.7rem;
+			}
+		}
+
+	@media screen and (min-width: 740px) {
+
+/*		.further-arrow {
+			height: 9rem;
+		}*/
+		#beng-sect {
+			margin-top: 0px;
+		}
+
+
+		#beng-details {
+			height: 6.2rem;
+			width: 6rem;
+		}
+			#beng-text {
+				font-size: 0.9rem;
 			}
 		}
 
