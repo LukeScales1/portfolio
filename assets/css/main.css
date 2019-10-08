@@ -224,13 +224,13 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.25rem;
+		font-size: 1.3rem;
 		font-weight: 800;
 		margin: 0 0 2rem 0;
 	}
 
 	h3 {
-		font-size: 0.875rem;
+		font-size: 1rem;
 	}
 
 	h4 {
@@ -282,7 +282,7 @@ input, select, textarea {
 		}
 
 		h3 {
-			font-size: 0.8rem;
+			font-size: 1rem;
 		}
 
 		h4 {
@@ -365,106 +365,28 @@ input, select, textarea {
 
 		}
 
-
-/* Accordion */
-	.accordion {
-	  width: 100%;
-	  max-width: 360px;
-	  margin: 30px auto 20px;
-	  background: #FFF;
-	  -webkit-border-radius: 4px;
-	  -moz-border-radius: 4px;
-	  border-radius: 4px;
-	}
-
-	.accordion .link {
-	  cursor: pointer;
-	  display: block;
-	  padding: 15px 15px 15px 42px;
-	  color: #4D4D4D;
-	  font-size: 14px;
-	  font-weight: 700;
-	  border-bottom: 1px solid #CCC;
-	  position: relative;
-	  -webkit-transition: all 0.4s ease;
-	  -o-transition: all 0.4s ease;
-	  transition: all 0.4s ease;
-	}
-
-	.accordion li:last-child .link { border-bottom: 0; }
-
-	.accordion.item i {
-	  position: absolute;
-	  top: 16px;
-	  left: 12px;
-	  font-size: 18px;
-	  color: #595959;
-	  -webkit-transition: all 0.4s ease;
-	  -o-transition: all 0.4s ease;
-	  transition: all 0.4s ease;
-	}
-
-	.accordion.item i.fa-chevron-down {
-	  right: 12px;
-	  left: auto;
-	  font-size: 16px;
-	}
-
-	.accordion.item.open .link { color: #b63b4d; }
-
-	.accordion.item.open i { color: #b63b4d; }
-
-	.accordion.item.open i.fa-chevron-down {
-	  -webkit-transform: rotate(180deg);
-	  -ms-transform: rotate(180deg);
-	  -o-transform: rotate(180deg);
-	  transform: rotate(180deg);
-	}
-
-	/**
-	 * Submenu
-	 -----------------------------*/
-
-
-	.submenu {
-	  display: none;
-	  background: #444359;
-	  font-size: 14px;
-	}
-
-	.submenu li { border-bottom: 1px solid #4b4a5e; }
-
-	.submenu a {
-	  display: block;
-	  text-decoration: none;
-	  color: #d9d9d9;
-	  padding: 12px;
-	  padding-left: 42px;
-	  -webkit-transition: all 0.25s ease;
-	  -o-transition: all 0.25s ease;
-	  transition: all 0.25s ease;
-	}
-
-	.submenu a:hover {
-	  background: #b63b4d;
-	  color: #FFF;
-	}
-
 /* Generic */
-	.hidden {
-		visibility: hidden;
-		display: none;
+
+	#beng-details {
+		cursor: pointer;
+		/*-webkit-transition: all 2s ease;*/
+	}
+
+	@-webkit-keyframes rotate {
+		0% {-webkit-transform: rotate(-90deg);}
+		100% {-webkit-transform: rotate(0deg);} 
 	}
 
 	.transition {
-		-webkit-animation-iteration-count: 1;
+		-webkit-transition: all 2s ease;
+		/*-webkit-animation-iteration-count: 1;
     	animation-iteration-count: 1;
     	-webkit-animation-duration: .3s;
     	animation-duration: .3s;
     	-webkit-animation-timing-function: ease;
     	animation-timing-function: ease;
     	-webkit-animation-fill-mode: both;
-    	animation-fill-mode: both
+    	animation-fill-mode: both*/
 	}
 
 	.rotate90 {
@@ -2735,13 +2657,37 @@ input, select, textarea {
 
 		.image.last {
 			display: block;
-			margin: 5rem 0 5rem 0;
+			margin: 5rem 0 2rem 0;
 			width: 105%;
 		}
 
 			.image.last img {
 				width: 105%;
 			}
+
+		@media screen and (max-width: 1444px) {
+
+			.image.last img {
+				margin-top: 2rem;
+			}
+
+			p.last {
+				margin-bottom: 10rem;
+			}
+		}
+
+
+		/*.image.last {
+			display: block;
+			margin: 3rem 0 5rem 0;
+			width: 100%;
+		}
+
+			.image.last img {
+				width: 90%;
+			}
+
+		}*/
 
 
 		@media screen and (min-width: 1200px) {

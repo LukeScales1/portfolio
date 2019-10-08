@@ -82,10 +82,10 @@
 
 		}
 
+	// Hide all elements marked as class 'hidden'
+		$(".hidden").hide();
 
 	// Recommendation link return.
-
-		$("#return-btn").hide();
 
 		$("#here-link").click(function(){
 			// $("#return-btn").toggleClass("hidden");
@@ -99,50 +99,30 @@
 			}, 500);
 		});
 
-		$('a.here-link')
-			.on('click', 'a', function(event) {
+	// More details buttons
+		$('#beng-details').click(function(){
+			$('#beng-details').toggleClass('rotate90');
+			if ($(this).hasClass('rotate90')) {
+				$('#accordion').fadeOut(1500, function() {
+					$('#further-beng').hide();
+				});
+			} else {
+				$('#further-beng').show();
+				$('#accordion').fadeIn(3000);
+			}
 
-				console.log('clicked');
+			// }
+			// $("#beng-text").fadeOut(1600, 'linear');
+			// var spanWidth = $('#further-beng p').width();
+			// $('#further-beng').animate( { width: spanWidth }, 3000 );
 
-				// var $a = $(this),
-				// 	$gallery = $a.parents('.gallery'),
-				// 	$modal = $gallery.children('.modal'),
-				// 	$modalImg = $modal.find('img'),
-				// 	href = $a.attr('href');
+			
 
-				// // Not an image? Bail.
-				// 	if (!href.match(/\.(jpg|gif|png|mp4)$/))
-				// 		return;
+			// setTimeout(function() {
+			// 	$('#further-beng').fadeIn(3000);
+			// }, 2000);
 
-				// // Prevent default.
-				// 	event.preventDefault();
-				// 	event.stopPropagation();
-
-				// // Locked? Bail.
-				// 	if ($modal[0]._locked)
-				// 		return;
-
-				// // Lock.
-				// 	$modal[0]._locked = true;
-
-				// // Set src.
-				// 	$modalImg.attr('src', href);
-
-				// // Set visible.
-				// 	$modal.addClass('visible');
-
-				// // Focus.
-				// 	$modal.focus();
-
-				// // Delay.
-				// 	setTimeout(function() {
-
-				// 		// Unlock.
-				// 			$modal[0]._locked = false;
-
-				// 	}, 600);
-
-			});
+		})
 
 	// Gallery.
 		$('.gallery')
