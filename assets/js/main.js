@@ -124,6 +124,14 @@
 
 		})
 
+		$('#achievements-btn').click(function(){
+			$('#achievements-btn').fadeOut(2500)
+			$('#achievements').fadeIn(2000, function() {
+				
+
+			});
+		})
+
 	// Gallery.
 		$('.gallery')
 			.on('click', 'a', function(event) {
