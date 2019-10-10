@@ -125,13 +125,32 @@
 		})
 
 		$('#achievements-btn').click(function(){
-			$('#achievements-btn').fadeOut(2500)
-			$('#achievements').fadeIn(2000, function() {
+			$('#achievements-btn').fadeOut(2500);
+			$('#achievements-return').fadeIn(2000, function() {
 				$('#achievements-headings').fadeIn(1500, function() {
 					$('.achievements-details').fadeIn(1500);
 				});
 			});
-		})
+		});
+
+		$('#achievements-return').click(function(){
+			$('#achievements-return').fadeOut(2000, function() {
+				$('#achievements-btn').fadeIn(500);
+			});
+			// $('#achievements').fadeOut(2000);
+			// $('#achievements-btn').fadeIn(2000);
+			// $('.achievements-details').fadeOut(1500);
+			// $('#achievements-headings').fadeOut(1500, function() {
+			// 		$('.achievements-details').fadeIn(1500);
+			// 	});
+			// $('#achievements').fadeOut(2000, function() {
+			// 	$('#achievements-headings').fadeIn(1500, function() {
+			// 		$('.achievements-details').fadeIn(1500);
+			// 	});
+			// });
+		});
+
+
 
 	// Gallery.
 		$('.gallery')
