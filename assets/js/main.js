@@ -110,10 +110,12 @@
 			}
 		})
 
+	//Achievements fade in & out
+
 		$('#achievements-btn').click(function(){
-			$('#achievements-btn').fadeOut(2500);
-			$('#achievements-return').fadeIn(2000, function() {
-				$('#achievements-headings').fadeIn(1500, function() {
+			$('#achievements-btn').fadeOut(2000);
+			$('#achievements-return').fadeIn(1800, function() {
+				$('#achievements-headings').fadeIn(1200, function() {
 					$('.achievements-details').fadeIn(1500);
 				});
 			});
