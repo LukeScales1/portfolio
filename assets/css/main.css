@@ -3229,7 +3229,7 @@ input, select, textarea {
 	.gallery {
 		display: flex;
 		flex-wrap: wrap;
-		margin: -1.25rem 0 0 -1.25rem;
+		margin: -1.25rem 0 2rem -1.25rem;
 		width: calc(100% + 1.25rem);
 	}
 
@@ -3240,7 +3240,7 @@ input, select, textarea {
 			outline: 0;
 			position: relative;
 			width: calc(50% - 1.25rem);
-			box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 		}
 
 			.gallery a img {
@@ -3259,6 +3259,11 @@ input, select, textarea {
 				.gallery a.landscape img {
 					height: 30vw;
 				}
+
+			/*Cheeky video setup*/
+			iframe.landscape {
+				width: 100%;
+			}
 
 			.gallery a.portrait img {
 				height: 30vw;
