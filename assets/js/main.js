@@ -88,12 +88,10 @@
 	// Recommendation link return.
 
 		$("#here-link").click(function(){
-			// $("#return-btn").toggleClass("hidden");
 			$("#return-btn").show();
 		});
 
 		$("#return-btn").click(function(){
-			// $("#return-btn").toggleClass("hidden");
 			setTimeout(function() {
 				$("#return-btn").hide();
 			}, 500);
@@ -110,18 +108,6 @@
 				$('#further-beng').show();
 				$('#accordion').fadeIn(3000);
 			}
-
-			// }
-			// $("#beng-text").fadeOut(1600, 'linear');
-			// var spanWidth = $('#further-beng p').width();
-			// $('#further-beng').animate( { width: spanWidth }, 3000 );
-
-			
-
-			// setTimeout(function() {
-			// 	$('#further-beng').fadeIn(3000);
-			// }, 2000);
-
 		})
 
 		$('#achievements-btn').click(function(){
@@ -137,17 +123,6 @@
 			$('#achievements-return').fadeOut(2000, function() {
 				$('#achievements-btn').fadeIn(500);
 			});
-			// $('#achievements').fadeOut(2000);
-			// $('#achievements-btn').fadeIn(2000);
-			// $('.achievements-details').fadeOut(1500);
-			// $('#achievements-headings').fadeOut(1500, function() {
-			// 		$('.achievements-details').fadeIn(1500);
-			// 	});
-			// $('#achievements').fadeOut(2000, function() {
-			// 	$('#achievements-headings').fadeIn(1500, function() {
-			// 		$('.achievements-details').fadeIn(1500);
-			// 	});
-			// });
 		});
 
 
@@ -274,31 +249,5 @@
 						}, 275);
 
 					});
-	// 
-
-		var Accordion = function(el, multiple) {
-		this.el = el || {};
-		this.multiple = multiple || false;
-
-		// Variables privadas
-		var links = this.el.find('.link');
-		// Evento
-		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-	}
-
-	Accordion.prototype.dropdown = function(e) {
-		var $el = e.data.el;
-			$this = $(this),
-			$next = $this.next();
-
-		$next.slideToggle();
-		$this.parent().toggleClass('open');
-
-		// if (!e.data.multiple) {
-		// 	$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-		// };
-	}	
-
-	var accordion = new Accordion($('#accordion'), false);
 
 })(jQuery);
