@@ -1,12 +1,13 @@
-My portfolio!
+This is the repository for my portfolio, which I'm hosting on GitHub Pages. Please go to http://LukeScales.github.io to see it in action!
 
 Credits:
 
 	Initial Design:
 		AJ (aj@lkn.io | @ajlkn)
 
-	Some Stock Images:
-		Unsplash (unsplash.com)
+	Images:
+		Piano robot: Franck V on Unsplash (unsplash.com)
+		Street art examples: PichiAvo (pichiavo.com)
 
 	Icons:
 		Font Awesome (fontawesome.io)
