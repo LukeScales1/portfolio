@@ -1,4 +1,4 @@
-This is the repository for my portfolio, which I'm hosting on GitHub Pages. Please go to http://LukeScales.github.io to see it in action!
+This is the repository for my portfolio, which I'm hosting on GitHub Pages. Please go to http://LukeScales.github.io/portfolio to see it in action!
 
 Credits:
 
