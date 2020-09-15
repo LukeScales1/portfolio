@@ -2452,6 +2452,12 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+/* PDF */
+	.pdf {
+		width: 100%;
+		height: 40rem;
+	}
+
 /* Image */
 
 	.image {
