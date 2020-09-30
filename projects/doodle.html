@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Doodle Digit Recogniser</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Using an image classification model trained on the MNIST dataset using Keras and TensorFlow with Python, converted to tfjs, to recognise doodle digits!" />
+		<meta name="keywords" content="MNIST, doodle digit recogniser, machine learning, image classification, TensorFlow, Keras" />
+		<link rel="stylesheet" href="../assets/css/doodle.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	</head>
+	<body>
+		<h1>Doodle Digit Classifier</h1>
+		<div class="container">
+			<div class="pad-and-controls">
+				<canvas id="doodle-pad" width="150" height="150"></canvas>
+			<div class="btn-container">
+				<button onclick="clearDoodle()">Clear</button>
+				<button onclick="predictDoodle()">Predict</button>
+			</div>
+			</div>
+			<div id="results-box" class="hide">
+				<h4>The classifier predicts this to be the number...</h4>
+				<h2 id="result">1</h2>
+			</div>
+		</div>
+		<canvas id="result-graph" class="hide" width="100" height="100"></canvas>
+		
+		<script src="../assets/js/doodle.js"></script>
+	</body>
+</html>

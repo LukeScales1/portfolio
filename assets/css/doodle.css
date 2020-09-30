@@ -1,0 +1,93 @@
+html {
+	font-size: 18pt;
+}
+
+body {
+	background-color: #bbfaeb;
+	color: #000000;
+	font-size: 1rem;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	line-height: 1.5;
+	font-weight: 300;
+	letter-spacing: 0.0375em;
+}
+
+#doodle-pad {
+	background-color: #000;
+	border-radius: 3px; 
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.btn-container {
+	padding: 0 0.2em;
+	display: inline-block;
+}
+
+.btn-container button + button {
+	margin-left: 2.4em;
+}
+
+#results-box {
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+#graph-container {
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#result-graph {
+	margin-top: 1em; 
+	background-color: #fff;
+	/*max-height: 65vh;*/
+	/*max-width: 90vw*/
+}
+
+	@media screen and (max-width: 1920px) {
+
+		html {
+			font-size: 16pt;
+		}
+
+		.container {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+	}
+
+	@media screen and (max-width: 1152px) {
+
+		html {
+			font-size: 14pt;
+		}
+
+		.container {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		html {
+			font-size: 12pt;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		html {
+			font-size: 11pt;
+		}
+
+	}

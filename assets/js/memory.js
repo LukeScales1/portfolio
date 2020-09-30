@@ -54,7 +54,7 @@ function updateRating() {
 
 	// Reset the stars if game is reset
 	if (moveCount === 0) {
-		for (var i = stars.length - 1; i >= 0; i--) {
+		for (let i = stars.length - 1; i >= 0; i--) {
 			stars[i].classList.remove('fa-star-o');
 		};
 	};
@@ -67,18 +67,11 @@ function updateRating() {
 		toggleStar(stars[1]);
 		score = 1;
 	};
-
-	// Project rubric asked for 1 star minimum
-
-	// } else if (moveCount === 25) {
-	// 	toggleStar(stars[0]);
-	// 	score = 0;
-	// }
 };
 
 // Function to lock in matches or return cards that don't match
 function updateCards(cardsArray, match) {
-	for (var i = cardsArray.length - 1; i >= 0; i--) {
+	for (let i = cardsArray.length - 1; i >= 0; i--) {
 		cardsArray[i].classList.remove('open', 'show');
 		if (match) {
 			cardsArray[i].classList.add('match');
@@ -101,7 +94,7 @@ function gameWon() {
 	modalBackground.style.display = 'block';
 	backgroundOpacity = 0.01;
 	fadeIntervalId = setInterval(fadeIn, 12);
-	setTimeout(function() {
+	setTimeout( () => {
 		clearInterval(fadeIntervalId);
 	}, 1200);
 };
@@ -123,7 +116,7 @@ function matchCheck(targetArray) {
 	updateCards(targetArray, match=isMatch);
 
 	// Remove cards from current guesses/card array, reset currentGuesses
-	setTimeout(function() {
+	setTimeout( () => {
 		currentTargets = [];
 	}, 0);
 
@@ -136,7 +129,7 @@ function show(target) {
 	// Pair of cards selected = 1 move of game, check for match
 	if (currentTargets.length === 2 ) {
 		moveCount += 1;
-		setTimeout(function() {
+		setTimeout( () => {
 			matchCheck(currentTargets)}, 800);
 	};
 };
@@ -156,17 +149,17 @@ function shuffle(array) {
 };
 
 function restart() {
-		shuffle(deckOfCards);
-		resetDeck();
-		currentTargets = [];
+	shuffle(deckOfCards);
+	resetDeck();
+	currentTargets = [];
 
-		moveCount = 0;
-		updateRating();
+	moveCount = 0;
+	updateRating();
 
-		clearInterval(timerIntervalId);
-		time = 0;
-		timer.textContent = time;
-		gameStart = false;
+	clearInterval(timerIntervalId);
+	time = 0;
+	timer.textContent = time;
+	gameStart = false;
 };
 
 
@@ -175,7 +168,7 @@ resetDeck();
 
 updateRating();
 
-container.addEventListener('click', function (evt) {
+container.addEventListener('click', (evt) => {
 	const clickedClass = evt.target.className;
 
 	if (clickedClass === 'modal-btn') {
