@@ -91,9 +91,19 @@
 			$("#return-btn").show();
 		});
 
+		$("#here-link-1").click(function(){
+			$("#return-btn-1").show();
+		});
+
 		$("#return-btn").click(function(){
 			setTimeout(function() {
 				$("#return-btn").hide();
+			}, 500);
+		});
+
+		$("#return-btn-1").click(function(){
+			setTimeout(function() {
+				$("#return-btn-1").hide();
 			}, 500);
 		});
 
