@@ -2723,11 +2723,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
-				.image.last img {
-					width: 80%;
-				}
-
+			.image.last img {
+				width: 80%;
 			}
+
 		}
 
 		p.last {
@@ -3691,7 +3690,7 @@ input, select, textarea {
 			}
 
 		#wrapper > section.intro > header > * {
-			width: 20rem;
+			width: 25rem;
 		}
 
 		#wrapper > section.intro > header:before {
@@ -3764,7 +3763,7 @@ input, select, textarea {
 					}
 
 				#wrapper > section.intro > header > * {
-					width: 21rem;
+					width: 25rem;
 				}
 
 				#wrapper > section.intro > header:before {
